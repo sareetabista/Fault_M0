@@ -1,0 +1,34 @@
+Experiment stem: chipwhisperer
+Fixed: 10000  Random: 10000
+
+|t|>4.5 at 54 samples
+  sample   137  t =  24.491
+  sample   138  t =  25.213
+  sample   139  t =  18.787
+  sample   140  t =  21.536
+  sample   141  t =  13.183         35
+  sample   142  t =  12.365
+  sample   143  t =  10.432
+  sample   144  t =  11.037        // ands 
+  sample   149  t = -13.244
+  sample   150  t = -13.740
+  sample   151  t =  -9.964
+  sample   152  t = -12.450          //38 // str secondcycle
+  sample   253  t =  68.080
+  sample   254  t =  72.939
+  sample   255  t =  45.167
+  sample   256  t =  53.695
+  sample   257  t =  22.747
+  sample   258  t =  20.348
+  sample   259  t =  11.578
+  sample   260  t =   8.858
+  sample   269  t = -39.574
+  sample   270  t = -44.175
+  sample   271  t = -28.759
+  sample   272  t = -33.834
+  sample   273  t = -19.394
+  sample   274  t = -19.422
+  sample   275  t = -14.385
+  sample   276  t = -14.745
+  sample   277  t =  15.985
+  sample   278  t =  19.040

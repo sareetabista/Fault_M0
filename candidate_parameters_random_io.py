@@ -8,11 +8,11 @@ import chipwhisperer as cw
 
 
 N_RUNS = 1000
-WIDTH = -10
-OFFSET = 14
-EXT_OFFSET = 64
-REPEAT = 5
-RESULT_FILE = f"repeat_1000_randomio_w{WIDTH}_off{OFFSET}_ext_{EXT_OFFSET}_00010101.csv"
+WIDTH = 2
+OFFSET = -3
+EXT_OFFSET = 63
+REPEAT = 10
+RESULT_FILE = f"repeat_1000_randomio_w{WIDTH}_off{OFFSET}_ext_{EXT_OFFSET}_notrand.csv"
 # Keep randomness fixed unless you want to test random masks too.
 # Change this to True if you want new randomness every trial also.
 RANDOMIZE_RANDOMNESS = False

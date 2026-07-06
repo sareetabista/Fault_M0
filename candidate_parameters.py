@@ -5,14 +5,15 @@ from collections import Counter
 import chipwhisperer as cw
 
 
-RESULT_FILE = "repeat_1000_w2_off-3_ext63.csv"
+
 N_RUNS = 1000
 
-WIDTH = 2
-OFFSET = -3
-EXT_OFFSET = 63
+WIDTH = -10
+OFFSET = 14
+EXT_OFFSET = 64
 REPEAT = 1
 
+RESULT_FILE = f"repeat_1000_w{WIDTH}_off{OFFSET}_ext_{EXT_OFFSET}_00010101.csv"
 
 def reset_target(scope):
     scope.io.nrst = "low"
@@ -125,7 +126,7 @@ try:
     setup_scope(scope)
     target.baud = 38400
 
-    rnd = u32(0x00100001)
+    rnd = u32(0x00010101)
 
     pkt = (
         u32(0x01020304) +

@@ -9,17 +9,17 @@ import chipwhisperer as cw
 # TARGETED CYCLE SETTINGS
 # =====================================================
 
-FIXED_EXT_OFFSET = 64        # fixed cycle to attack, change this to 62, 63, 67, etc.
+FIXED_EXT_OFFSET = 63        # fixed cycle to attack, change this to 62, 63, 67, etc.
 
 #WIDTHS = range(-48, 48, 1)   # sweep width from -15 to +15
 #OFFSETS = range(-48, 48, 2)  # sweep offset from -15 to +15
-WIDTHS = [-40, -20, -10, -2,1,2,10,20,40]
-OFFSETS = [-40, -30, -20, -10, 1, 14, 20, 30, 40, 45]
+WIDTHS = [2,3]    # sweep width from -15 to +15
+OFFSETS = [-6,-5,-4,-3,-2,-1]
 
 GLITCH_REPEATS = [1]         # ChipWhisperer glitch repeat, not number of trials
-TRIALS_PER_SETTING = 50      # actual repeated experiments per width/offset setting
+TRIALS_PER_SETTING = 10      # actual repeated experiments per width/offset setting
 
-RESULT_FILE = f"targeted_ext_{FIXED_EXT_OFFSET}_width_offset_sweep_00010101.csv"
+RESULT_FILE = f"targeted_ext_{FIXED_EXT_OFFSET}_width_offset_sweep_00010101_4.csv"
 
 
 def reset_target(scope):
